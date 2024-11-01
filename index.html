@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Dicionário de Gírias do Grupinho</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Dicionário de Gírias do Grupinho</h1>
+    </div>
+    
+    <div id="container">
+        <div id="scrollControls">
+            <button onclick="scrollSidebar('up')">Subir</button>
+            <button onclick="scrollSidebar('down')">Descer</button>
+        </div>
+        <div id="sidebar" class="scrollable-sidebar">
+            <div class="category">
+                <h3>Gírias</h3>
+                <a href="#" onclick="showSection('wingslompson')">Wingslompson</a>
+                <a href="#" onclick="showSection('togles')">Togles</a>
+                <a href="#" onclick="showSection('glopnorp')">Glopnorp</a>
+                <a href="#" onclick="showSection('banjo')">Banjo paia lol</a>
+                <a href="#" onclick="showSection('eder')">Eder</a>
+                <a href="#" onclick="showSection('botafogo')">Botafogo 2024</a>
+                <a href="#" onclick="showSection('durik')">Durik</a>
+                <a href="#" onclick="showSection('resenhar')">Resenhar</a>
+                <a href="#" onclick="showSection('receba')">Receba</a>
+                <a href="#" onclick="showSection('la_ele')">Lá Ele</a>
+                <a href="#" onclick="showSection('ta_porra')">Tá Porra</a>
+                <a href="#" onclick="showSection('bora_bill')">Bora Bill</a>
+                <a href="#" onclick="showSection('pqp')">PQP</a>
+                <a href="#" onclick="showSection('que_isso')">Que Isso</a>
+                <a href="#" onclick="showSection('que_isso_larih')">Que Isso Larih</a>
+                <a href="#" onclick="showSection('ue_mano')">Ué Mano</a>
+                <a href="#" onclick="showSection('finalmente_admitiu')">Finalmente Admitiu</a>
+                <a href="#" onclick="showSection('o_golpe_ta_ai')">O Golpe Tá Aí</a>
+                <a href="#" onclick="showSection('a_manipavao')">A Manipulação</a>
+                <a href="#" onclick="showSection('oi_calabresa')">Oi Calabresa</a>
+                <a href="#" onclick="showSection('nutella')">Nutella</a>
+                <a href="#" onclick="showSection('morra')">Morra</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <input type="text" id="search" placeholder="Pesquisar gírias..." oninput="searchGiria()" />
+            <div id="searchResults" class="hidden"></div>
+
+            <!-- Seções de Gírias com definições aprofundadas -->
+            <div id="wingslompson" class="section hidden">
+                <h2 class="section-title">Wingslompson</h2>
+                <p><strong>Definição:</strong> Uma forma informal e bem-humorada de dizer "Oi". Utilizada principalmente em círculos de amigos próximos, serve como uma saudação descontraída e informal.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Wingslompson, chegou agora?"</em></p>
+                <p><strong>Origem:</strong> A palavra foi criada em um contexto de brincadeiras entre amigos, buscando dar um toque humorístico às interações cotidianas.</p>
+            </div>
+
+            <div id="togles" class="section hidden">
+                <h2 class="section-title">Togles</h2>
+                <p><strong>Definição:</strong> Expressão usada em tom de brincadeira para indicar algo radical ou exagerado, como um desejo extremo de espancar a propria progenitora.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Hoje tô com vontade de Togles, sabe?"</em></p>
+                <p><strong>Origem:</strong> Surgiu em um contexto de exagero e ironia, usado para transformar algo simples em algo grande e dramático.</p>
+            </div>
+
+            <div id="glopnorp" class="section hidden">
+                <h2 class="section-title">Glopnorp</h2>
+                <p><strong>Definição:</strong> Termo que se refere a um inimigo ou algo desagradável. Geralmente usado para se referir a uma pessoa ou situação indesejada.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Cuidado com o Glopnorp, ele tá por aí."</em></p>
+                <p><strong>Origem:</strong> O termo foi criado em tom de humor para nomear um personagem fictício que sempre atrapalha ou traz problemas.</p>
+            </div>
+
+            <div id="banjo" class="section hidden">
+                <h2 class="section-title">Banjo paia lol</h2>
+                <p><strong>Definição:</strong> Gíria usada para descrever alguém com pouca habilidades em algo específico, particularmente em situações competitivas.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Esse cara é Banjo paia lol no jogo, horrivel!"</em></p>
+                <p><strong>Origem:</strong> Vem de expressões de euforia e humor, destacando o pouco talento de alguém em determinada situação.</p>
+            </div>
+
+            <div id="eder" class="section hidden">
+                <h2 class="section-title">Eder</h2>
+                <p><strong>Definição:</strong> Utilizado para se referir a uma pessoa afrodescendente careca. Geralmente é uma referência a um amigo específico em círculos fechados.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"O Eder chegou, prepara a zoeira!"</em></p>
+                <p><strong>Origem:</strong> Gíria originada como uma brincadeira interna entre amigos, onde o nome "Eder" ficou associado a essa descrição específica.</p>
+            </div>
+
+            <div id="botafogo" class="section hidden">
+                <h2 class="section-title">Botafogo 2024</h2>
+                <p><strong>Definição:</strong> Expressão criativa para se referir a uma garrafa de Coca-Cola de 3 litros, geralmente dita em tom de brincadeira.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Vamos pedir um Botafogo 2024 pra festa!"</em></p>
+                <p><strong>Origem:</strong> O termo surgiu entre amigos como uma comparação exagerada entre o tamanho da garrafa e a magnitude de um time de futebol.</p>
+            </div>
+
+            <div id="durik" class="section hidden">
+                <h2 class="section-title">Durik</h2>
+                <p><strong>Definição:</strong> Refere-se a alguém que tem uma habilidade incomparável em jogos ou atividades que requerem precisão, especialmente em "acertar na mosca".</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Esse cara é um Durik na hora de acertar tiros perfeitos."</em></p>
+                <p><strong>Origem:</strong> Termo criado em círculos de jogos para descrever alguém com taxa de acerto impressionante, como "1000% taxa de capa" em jogos de tiro.</p>
+            </div>
+
+            <div id="resenhar" class="section hidden">
+                <h2 class="section-title">Resenhar</h2>
+                <p><strong>Definição:</strong> Um termo utilizado para descrever uma ação ou comportamento considerado um "ritual demoníaco", geralmente associado a situações de desrespeito ou zombarias.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Hoje vamos fazer um resenhar não da."</em></p>
+                <p><strong>Contexto:</strong> Essa expressão é frequentemente usada entre amigos em um tom de brincadeira, mas pode carregar um peso maior se utilizada em contextos mais sérios, refletindo a cultura de desdém e humor negro que pode ser problemática.</p>
+            </div>
+
+            <div id="receba" class="section hidden">
+                <h2 class="section-title">Receba</h2>
+                <p><strong>Definição:</strong> Usada de forma irônica, essa gíria pode significar "quero fazer massacre na escola amanhã", refletindo um humor sombrio e agressivo.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Se você não me ajudar, vou fazer um 'receba' com todo mundo."</em></p>
+                <p><strong>Contexto:</strong> Embora possa ser utilizada de maneira humorística entre amigos, essa gíria também pode ser alarmante e reflete uma normalização de comportamentos agressivos que deve ser discutida.</p>
+            </div>
+
+            <div id="la_ele" class="section hidden">
+                <h2 class="section-title">Lá Ele</h2>
+                <p><strong>Definição:</strong> Uma expressão que faz referência a um estereótipo racista, usada para descrever alguém de forma pejorativa.</p>
+                <p><strong>Exemplo de uso:</strong> <em>" vem o Lá ele de novo, tentando se exibir."</em></p>
+                <p><strong>Contexto:</strong> Essa gíria deve ser evitada, pois perpetua estigmas e discriminações, destacando a necessidade de diálogo sobre racismo.</p>
+            </div>
+
+            <div id="ta_porra" class="section hidden">
+                <h2 class="section-title">Tá Porra</h2>
+                <p><strong>Definição:</strong> Usado para expressar forte emoção ou um amor extremo, frequentemente vinculado a conteúdos provocativos.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Quando vi aquele jogo, pensei: 'Tá porra!'"</em></p>
+                <p><strong>Contexto:</strong> Embora possa ser usado em tom de brincadeira, essa expressão também pode indicar excessos que, quando normalizados, podem desensibilizar comportamentos sociais.</p>
+            </div>
+
+            <div id="bora_bill" class="section hidden">
+                <h2 class="section-title">Bora Bill</h2>
+                <p><strong>Definição:</strong> Uma gíria que sugere uma ação extrema, quase suicida, como "se mata".</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Ele disse me ofendeu, e eu só pude pensar: bora Bill."</em></p>
+                <p><strong>Contexto:</strong> Essa expressão reflete a cultura de humor negro que, embora possa ser vista como brincadeira, pode ser prejudicial e desencoraja conversas sobre saúde mental.</p>
+            </div>
+
+            <div id="pqp" class="section hidden">
+                <h2 class="section-title">PQP</h2>
+                <p><strong>Definição:</strong> Uma sigla que, no contexto da gíria, é usada para expressar descontentamento ou raiva, muitas vezes associada a comentários discriminatórios.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"PQP, não acredito que ele fez isso!"</em></p>
+                <p><strong>Contexto:</strong> Essa gíria pode ser ofensiva e serve como um lembrete de que certas expressões podem alimentar discursos de ódio e discriminação.</p>
+            </div>
+
+            <div id="que_isso" class="section hidden">
+                <h2 class="section-title">Que Isso</h2>
+                <p><strong>Definição:</strong> Usada para expressar uma crença extrema, como "sou nazista e cultuo o diabo".</p>
+                <p><strong>Exemplo de uso:</strong> <em>"gente que isso!"</em></p>
+                <p><strong>Contexto:</strong> Essa expressão é um exemplo de como certas gírias podem ser carregadas de preconceitos e devem ser discutidas criticamente.</p>
+            </div>
+
+            <div id="que_isso_larih" class="section hidden">
+                <h2 class="section-title">Que Isso Larih</h2>
+                <p><strong>Definição:</strong> Uma gíria que expressa uma crença contrária, como "eu sou de Deus".</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Quando ele falou aquilo, só consegui responder: que isso, Larih!"</em></p>
+                <p><strong>Contexto:</strong> Essa expressão pode ser vista como um contraste a outros discursos, trazendo à tona discussões sobre a fé e crenças pessoais.</p>
+            </div>
+
+            <div id="ue_mano" class="section hidden">
+                <h2 class="section-title">Ué Mano</h2>
+                <p><strong>Definição:</strong> Uma expressão que sugere indignação ou raiva, frequentemente utilizada em situações de conflito.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Ué, mano, você não vai defender seu amigo?"</em></p>
+                <p><strong>Contexto:</strong> Essa gíria reflete como a comunicação entre amigos pode evoluir para discussões acaloradas, mas também ressalta a necessidade de diálogo saudável.</p>
+            </div>
+
+            <div id="finalmente_admitiu" class="section hidden">
+                <h2 class="section-title">Finalmente Admitiu</h2>
+                <p><strong>Definição:</strong> Usada para reconhecer uma verdade, muitas vezes negativa, como "sou mentiroso, não acreditem em mim".</p>
+                <p><strong>Exemplo de uso:</strong> <em>"cara ele é glopnorp finalmente admitiu ."</em></p>
+                <p><strong>Contexto:</strong> Essa expressão enfatiza a importância da honestidade nas relações, além de refletir sobre a cultura de negação que pode existir em certos círculos sociais.</p>
+            </div>
+
+            <div id="o_golpe_ta_ai" class="section hidden">
+                <h2 class="section-title">O Golpe Tá Aí</h2>
+                <p><strong>Definição:</strong> Usada para referir-se a uma situação que parece vantajosa, como "é verdade este bilhete".</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Se você não aproveitar agora, o golpe tá aí, cai quem quer!"</em></p>
+                <p><strong>Contexto:</strong> Essa gíria destaca como a manipulação pode ser comum em interações sociais, levando a discussões sobre ética e credibilidade.</p>
+            </div>
+
+            <div id="a_manipavao" class="section hidden">
+                <h2 class="section-title">A Manipulação</h2>
+                <p><strong>Definição:</strong> Usada para descrever ações de controle, como "adoro o diabo, toda noite faço ritual".</p>
+                <p><strong>Exemplo de uso:</strong> <em>"cara serio a manipulavao de verdade."</em></p>
+                <p><strong>Contexto:</strong> Essa gíria reflete a complexidade das relações de poder e como certas expressões podem reforçar estereótipos negativos.</p>
+            </div>
+
+            <div id="oi_calabresa" class="section hidden">
+                <h2 class="section-title">Oi Calabresa</h2>
+                <p><strong>Definição:</strong> Uma saudação que carrega um desejo de mal, como "espero que você morra".</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Quando ela me irritou, eu respondi: 'Oi, calabresa!'"</em></p>
+                <p><strong>Contexto:</strong> Embora possa ser visto como uma brincadeira, esse tipo de expressão pode ter consequências sérias nas relações interpessoais.</p>
+            </div>
+
+            <div id="nutella" class="section hidden">
+                <h2 class="section-title">Nutella</h2>
+                <p><strong>Definição:</strong> Usado para descrever alguém como inferior, geralmente em tom de zombaria.</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Ele é tão Nutella, não sabe jogar nada!"</em></p>
+                <p><strong>Contexto:</strong> Essa gíria revela como o uso de rótulos pode ser prejudicial e reforçar dinâmicas de exclusão social.</p>
+            </div>
+
+            <div id="morra" class="section hidden">
+                <h2 class="section-title">Morra</h2>
+                <p><strong>Definição:</strong> Usada como uma expressão de má vontade, como "que tudo de certo na sua vida".</p>
+                <p><strong>Exemplo de uso:</strong> <em>"Quando ele me elogiou, eu disse: morra!"</em></p>
+                <p><strong>Contexto:</strong> Embora possa ser usada de forma leve, essa expressão pode ter um impacto negativo nas relações e deve ser abordada com sensibilidade.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Função para mostrar a seção correta com base na gíria clicada
+        function showSection(sectionId) {
+            // Esconde todas as seções
+            let sections = document.getElementsByClassName('section');
+            for (let i = 0; i < sections.length; i++) {
+                sections[i].classList.add('hidden');
+            }
+
+            // Mostra a seção selecionada
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+
+        // Função de pesquisa de gírias
+        function searchGiria() {
+            let input = document.getElementById('search').value.toLowerCase();
+            let sections = document.getElementsByClassName('section');
+            let searchResults = document.getElementById('searchResults');
+            let found = false;
+
+            for (let i = 0; i < sections.length; i++) {
+                let title = sections[i].getElementsByClassName('section-title')[0].innerText.toLowerCase();
+                if (title.includes(input)) {
+                    sections[i].classList.remove('hidden');
+                    found = true;
+                } else {
+                    sections[i].classList.add('hidden');
+                }
+            }
+
+            if (found) {
+                searchResults.classList.add('hidden');
+            } else {
+                searchResults.classList.remove('hidden');
+                searchResults.innerHTML = 'Nenhuma gíria encontrada.';
+            }
+        }
+
+        
+        
+    </script>
+</body>
+</html>
